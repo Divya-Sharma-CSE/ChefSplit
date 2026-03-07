@@ -69,7 +69,6 @@ function Settings() {
         </div>
       
         <img src="/images/lemons.png" className="lemon lemon-left" />
-        <img src="/images/peach.png" className="fruit peach"/>
         <img src="/images/berries.png" className="fruit berries"/>
     
     </div>

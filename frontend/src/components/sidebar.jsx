@@ -17,6 +17,7 @@ function Sidebar() {
       <Link to="/settings">
         <img src="images/settingIcon.png" className="icon" alt="Settings" />
       </Link>
+      
     </div>
   );
 }

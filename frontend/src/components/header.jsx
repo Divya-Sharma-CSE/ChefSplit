@@ -9,6 +9,7 @@ function Header() {
       </div>
 
       <img src="images\lemons.png" className="lemon lemon-right"/>
+      
     </header>
   );
 }
