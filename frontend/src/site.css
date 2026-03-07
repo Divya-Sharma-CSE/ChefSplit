@@ -1,6 +1,101 @@
-.homepage{
-    background-color: #FFFAF0;
-    display:flex;
+body{
+  margin:0;
+  background:#efeae2;
+  font-family: "Cormorant SC";
 }
 
-.homepage .header
+/* HEADER */
+
+.header{
+  height:120px;
+  background:#C0D3C4;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+
+.logo{
+    /*display: flex;
+    justify-content: center; */
+    position: relative;
+}
+
+.logo .l1{
+    font-size:48px;
+    font-family: "Cormorant SC";
+    justify-self: center ;
+}
+
+.logo .l2{
+    position: absolute;
+    font-family: "Homemade Apple"; 
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%) translate(-10%,-10%);
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  position:absolute;
+  top:160px;
+  left:40px;
+  width:70px;
+  height:400px;
+  background:#7f9a84;
+  box-shadow: 0px 0px 10px 5px rgba(29, 49, 42, 0.5);
+  border-radius:40px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.icon{
+  font-size:24px;
+}
+
+/* BUTTONS */
+
+.button-container{
+  margin-top:40px;
+  display:flex;
+  gap:40px;
+  justify-content:center;
+}
+
+.main-btn{
+  background:#7f9a84;
+  border:none;
+  padding:14px 40px;
+  border-radius:30px;
+  color:white;
+  font-size:18px;
+  cursor:pointer;
+}
+
+/* MAIN */
+
+.main{
+  display:flex;
+  justify-content:center;
+}
+
+/* LEMONS */
+
+.lemon{
+  position:absolute;
+  width:140px;
+}
+
+.lemon-right{
+  right:40px;
+  top:10px;
+}
+
+.lemon-left{
+  bottom:20px;
+  left:40px;
+}
