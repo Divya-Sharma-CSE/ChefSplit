@@ -1,0 +1,21 @@
+.expenseTracker {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.expenseTracker button {
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.expenseTracker ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}

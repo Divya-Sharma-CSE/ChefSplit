@@ -1,3 +1,8 @@
+/*
+*{
+    outline: red 1px solid;
+}
+*/
 body{
   margin:0;
   background:#FFFAF0;
@@ -100,6 +105,14 @@ body{
   justify-content:center;
 }
 
+.peach{
+    position: absolute;
+    justify-self: center;
+    transform: translate(130%,50%);
+    width: 250px;
+    z-index: -1;
+}
+
 /* LEMONS */
 
 .lemon{
@@ -117,4 +130,119 @@ body{
 .lemon-left{
   bottom:20px;
   left:40px;
+}
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ HOMEPAGE ~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* FAVOURITES SECTION */
+
+.homeContent{
+  display:flex;
+  align-items:flex-start;
+  gap:180px;
+  margin-left:200px;
+  margin-right:100px;
+  margin-top:40px;
+}
+
+.FAVOURITES{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  flex:1;
+}
+
+
+/* FAVOURITE BOX */
+.favourites{
+  width:700px;
+  height:80px;
+  padding:20px;
+  background:#7D9E80;
+  border-radius:20px;
+
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+/* TEXT */
+
+.favText{
+  font-size:25px;
+  font-family:"Cormorant SC";
+}
+
+/* CIRCLE ITEMS */
+
+.fav{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  background:#DCD4C1;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-family:"Montserrat";
+  font-size:15px;
+}
+
+/* Wallet rectangle */
+
+.walletBox{
+  width:380px;
+  height:400px;
+  background:#7D9E80;
+  border-radius:20px;
+  padding:20px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Wallet text */
+
+.walletTitle{
+  font-size:40px;
+  font-family:"Homemade Apple";
+  color:white;
+}
+
+.walletAmount{
+  font-size:32px;
+  font-family:"Montserrat";
+  color:white;
+}
+
+.walletDivider {
+  width: 90%;           
+  border: 0;            
+  border-top: 2px solid white; 
+  margin: 10px 5px;       
+}
+
+.expenseTracker {
+  text-align: center;
+  width: 200px;
+  color:white;
+  font-family: "Montserrat";
+}
+
+
+.expenseTracker ul {
+  list-style: none;
+  padding: 0;
+}
+
+.walletTitle,
+.walletAmount {
+  margin: 0px; /* removes extra space */
+  padding: 0px;
 }
