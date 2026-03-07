@@ -1,3 +1,5 @@
+import React from "react";
+
 function Header() {
   return (
     <header className="header">
@@ -6,10 +8,7 @@ function Header() {
         <p className="l2">Split</p>
       </div>
 
-      <img
-        src="/lemon-right.png"
-        className="lemon lemon-right"
-      />
+      <img src="images\lemons.png" className="lemon lemon-right"/>
     </header>
   );
 }

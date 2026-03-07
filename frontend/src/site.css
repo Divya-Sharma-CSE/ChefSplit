@@ -1,6 +1,6 @@
 body{
   margin:0;
-  background:#efeae2;
+  background:#FFFAF0;
   font-family: "Cormorant SC";
 }
 
@@ -22,30 +22,38 @@ body{
 }
 
 .logo .l1{
-    font-size:48px;
+    font-size:60px;
     font-family: "Cormorant SC";
-    justify-self: center ;
+    position: relative;
+    transform: translate(-50%,-20%);        /*only moves l1*/
 }
 
 .logo .l2{
-    position: absolute;
-    font-family: "Homemade Apple"; 
+    font-size:50px;
+    position: absolute;                     /*anchored to header*/
+    font-family: "Homemade Apple";
     top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%) translate(-10%,-10%);
+    left: 50%;
+    transform: translate(-50%, -50%) translate(40%, -20%);
 }
 
 /* SIDEBAR */
 
 .sidebar{
   position:absolute;
-  top:160px;
+  top:90px;
   left:40px;
-  width:70px;
-  height:400px;
-  background:#7f9a84;
-  box-shadow: 0px 0px 10px 5px rgba(29, 49, 42, 0.5);
-  border-radius:40px;
+  width:80px;
+  height:450px;
+  background:#7D9E80;
+  background-image: repeating-linear-gradient(
+    36deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 0px,
+    transparent 2px
+  );  /*box-shadow: 0px 0px 5px 2px rgba(29, 49, 42, 0.5); */
+  border-radius:20px;
 
   display:flex;
   flex-direction:column;
@@ -54,7 +62,8 @@ body{
 }
 
 .icon{
-  font-size:24px;
+  width:40px;
+  color:#FFFAF0;
 }
 
 /* BUTTONS */
@@ -68,12 +77,20 @@ body{
 
 .main-btn{
   background:#7f9a84;
+  background-image: repeating-linear-gradient(
+    36deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 0px,
+    transparent 2px
+  );
   border:none;
   padding:14px 40px;
   border-radius:30px;
   color:white;
-  font-size:18px;
+  font-size:22px;
   cursor:pointer;
+
 }
 
 /* MAIN */
@@ -87,12 +104,14 @@ body{
 
 .lemon{
   position:absolute;
-  width:140px;
+  width:160px;
 }
 
 .lemon-right{
   right:40px;
-  top:10px;
+  top:30px;
+  width: 180px;
+  transform: scaleX(-1);
 }
 
 .lemon-left{

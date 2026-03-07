@@ -1,6 +1,7 @@
-import Header from "../components/header";
-import Sidebar from "../components/sidebar";
-import ActionButtons from "../components/actionButtons";
+import React from "react";
+import Header from "../components/header.jsx";
+import Sidebar from "../components/sidebar.jsx";
+import ActionButtons from "../components/actionButtons.jsx";
 
 function Home() {
   return (
@@ -14,7 +15,7 @@ function Home() {
         <ActionButtons />
 
         <img
-          src="/lemon-left.png"
+          src="images\lemons.png"
           className="lemon lemon-left"
         />
       </main>
