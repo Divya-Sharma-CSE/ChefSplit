@@ -13,7 +13,7 @@ body{
 /* HEADER */
 
 .header{
-  height:120px;
+  height:90px;
   background:#C0D3C4;
   display:flex;
   justify-content:center;
@@ -28,7 +28,7 @@ body{
 }
 
 .l1{
-    font-size:60px;
+    font-size:50px;
     font-family: "Cormorant SC";
     position: relative;
 }
@@ -38,7 +38,7 @@ body{
 }
 
 .l2{
-    font-size:50px;
+    font-size:40px;
     position: absolute;                     /*anchored to header*/
     font-family: "Homemade Apple";
 }
@@ -52,11 +52,11 @@ body{
 /* SIDEBAR */
 
 .sidebar{
+    top:0%;
+    left:-10px;
   position:absolute;
-  top:90px;
-  left:40px;
+  min-height:100vh;
   width:80px;
-  height:450px;
   background:#7D9E80;
   background-image: repeating-linear-gradient(
     36deg,
@@ -71,6 +71,7 @@ body{
   flex-direction:column;
   justify-content:space-around;
   align-items:center;
+  z-index: 2;
 }
 
 .icon{
@@ -154,7 +155,6 @@ body{
   gap:180px;
   margin-left:200px;
   margin-right:100px;
-  margin-top:40px;
 }
 
 .FAVOURITES{
@@ -204,11 +204,10 @@ body{
 
 .walletBox{
   width:380px;
-  height:400px;
+  height:350px;
   background:#7D9E80;
   border-radius:20px;
-  padding:20px;
-
+  padding:40px 20px 40px 20px;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -265,17 +264,16 @@ body{
   overflow: hidden;
 }
 
-.settings-page .header .logo{
-    transform: translateX(100%);
-}
 
-.settings-container {
-    margin-left: 200px;
+
+.settings-container, .personalContainer {
+    margin-left: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
     position: relative; /* for fruit positions */
     align-items:flex-start;
+
 }
 
 
@@ -291,7 +289,7 @@ body{
     transform: translateY(-30px);
 }
 
-.settings-header h1 {
+.settings-header h1, .personal-header h1 {
   font-size: 40px;
   font-family: "Homemade Apple";
   color: white;
@@ -308,6 +306,7 @@ body{
   margin-bottom: 50px;
   font-family: "Montserrat";
   font-weight : 500;
+  z-index: 1;
 }
 
 
@@ -332,7 +331,288 @@ body{
 
 .berries { 
     right: 10%; 
-    bottom: 20%;
-    width: 220px;
+    bottom: 10%;
+    width: 300px;
+    height: 200px;
     position: absolute;
+    opacity: 0.9;
+}
+
+.settings-page .peach{
+    top: 60%;
+    left: 25%;
+    width: 200px;
+    z-index:0;
+}
+
+.fruit1{
+    top:40%;
+    right: 0%;
+    position: absolute;
+    width: 200px;
+    opacity: 0.85;
+}
+
+.fruit2{
+    top:20%;
+    right: 40%;
+    position: absolute;
+    width: 200px;
+    opacity: 0.85;
+    z-index:0;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ PERSONAL PAGE ~~~~~~~~~~~~~~~~~~~~~~ */
+.personal-page .header{
+    height:100px;
+    background: #C0D3C4;
+}
+
+.header .logo{
+    transform: translateY(-5px);
+}
+
+ .header .logo .l1{
+    font-size:40px;
+}
+.header .logo .l2{
+    font-size:40px;
+}
+
+.personal-page {
+    min-height: 100vh;
+    background-color: #FFFAF0;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+}
+
+.personal-header{
+    width: 450px;
+    height: 120px;
+    padding-left:40px;
+    display: flex;
+    gap:50px;
+    transform: translate(-10%,-80%);
+}
+
+.personal-page .lemon-right{
+    width:130px;
+}
+
+.personal-header h1{
+    color:black;
+}
+
+.bear{
+    transform: translateY(-20px);;
+}
+
+
+
+
+/* TOP CARDS */
+
+.top-cards{
+    display:flex;
+    gap:25px;
+
+}
+
+/* BALANCE CARD */
+
+.balance-card{
+
+    background: linear-gradient(135deg, #9CAF88 0%, #B4C7A4 100%);
+    border-radius: 16px;
+    padding:25px;
+    border-radius:16px;
+    color:white;
+    height: 150px;
+    width:250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.balance-card p{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.balance-card h1, .budget-overview h1{
+    margin-top:10px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30px;
+}
+.badge {
+    justify-self: flex-end;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* BUDGET OVERVIEW */
+
+.budget-count{
+font-size:30px;
+font-weight:600;
+}
+
+
+.balance-card p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #2f5d50;
+}
+
+.balance-card h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2f5d50;
+}
+
+/* Monthly Budget Card */
+.budget-overview {
+  flex: 1;
+    width: 700px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.budget-numbers h1 {
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #2f5d50;
+}
+
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #e0e0d8;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+
+
+/* Remaining Text */
+.remaining {
+  font-size: 14px;
+  color: #224239;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+/* CATEGORY CARDS */ 
+
+.category-card{
+  background:#E6ECD6;
+  padding:25px;
+  border-radius:20px;
+  width:420px;
+  font-size: 20px;
+}
+
+.category-card h2{
+  margin-bottom:20px;
+  color:#2D3319;
+  font-size: 20px;
+}
+
+.category-row{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:18px;
+}
+
+.category-info{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight:500;
+}
+
+.icon{
+  font-size:20px;
+}
+
+.spent-input{
+  width:100px;
+  padding:5px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+.numbers{
+  font-size:12px;
+  color:#6B7557;
+}
+
+.spent{
+  font-weight:600;
+  color:#2D3319;
+}
+
+.warning{
+  color:#D87C7C;
+}
+
+.progress-bar{
+  width:100%;
+  height:8px;
+  background:#DCE3C2;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.progress-fill{
+  height:100%;
+  background:#7FA36B;
+  border-radius:10px;
+  transition:width 0.5s ease;
+}
+
+.warning-bar{
+  background:#D87C7C;
+}
+
+.warning-text{
+  font-size:12px;
+  color:#D87C7C;
+}
+
+/* PROGRESS BAR */
+
+.progress-bar{
+    width:100%;
+    height:8px;
+    background:#e5e5e5;
+    border-radius:6px;
+    margin-top:6px;
+}
+
+.progress-fill{
+    height:100%;
+    background:#8FAF8B;
+    border-radius:6px;
+}
+
+
+.budget-overview, .category-card {
+    flex-shrink: 0;   /* prevents shrinking */
+    margin-bottom: 25px; /* vertical spacing when wrapped */
 }

@@ -8,7 +8,7 @@ function Sidebar() {
       <Link to="/personal">
         <img src="images/profileIcon.png" className="icon" alt="Home" />
       </Link>
-      <Link to="/personal">
+      <Link to="/friends">
         <img src="images/peopleIcon.png" className="icon" alt="Personal" />
       </Link>
       <Link to="/add">

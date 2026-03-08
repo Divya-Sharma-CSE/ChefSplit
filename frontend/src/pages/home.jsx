@@ -63,14 +63,9 @@ function Home() {
           <p className="walletAmount">₹3489</p>
           <hr className="walletDivider" />
             <div className="expenseTracker">
+                <br></br>
             <ExpensePieChart expenses={expenses} />
-            <ul>
-                {expenses.map((e, idx) => (
-                <li key={idx}>
-                    {e.category}: ₹{e.amount}
-                </li>
-                ))}
-            </ul>
+
             </div>
         </div>
 
