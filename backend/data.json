@@ -1,0 +1,54 @@
+{
+  "expenses": [
+    {
+      "id": "5eaca526-fa8e-4983-b63f-1efdfd7d7d19",
+      "name": "Coffee",
+      "amount": 150,
+      "category": "Food",
+      "date": "2026-03-07",
+      "note": "",
+      "source": "manual"
+    },
+    {
+      "id": "8806f933-565a-46c9-b33c-b46b999f11ed",
+      "name": "Uber",
+      "amount": 1000,
+      "category": "Transport",
+      "date": "2026-03-07",
+      "note": "",
+      "source": "manual"
+    },
+    {
+      "id": "d1f2fe0e-4f64-47cd-ab3e-e0f49ea391a9",
+      "name": "SPICE GARDEN RESTAURANT",
+      "amount": 1593,
+      "category": "Food",
+      "date": "2026-03-07",
+      "note": "Scanned from receipt",
+      "source": "receipt"
+    },
+    {
+      "id": "117b2150-37b0-40a2-a840-fd28ee99db0c",
+      "name": "SHANKAR AUTO SERVIC",
+      "amount": 1852.93,
+      "category": "Transport",
+      "date": "2026-03-07",
+      "note": "Scanned from receipt",
+      "source": "receipt"
+    },
+    {
+      "id": "62bf04dc-af24-4043-9ea4-46109b76a954",
+      "name": "SPICE GARDEN RESTAURANT",
+      "amount": 1593,
+      "category": "Food",
+      "date": "2026-03-07",
+      "note": "Scanned from receipt",
+      "source": "receipt"
+    }
+  ],
+  "balance": {
+    "current": 3811.07,
+    "income": 10000
+  },
+  "recurring": []
+}
